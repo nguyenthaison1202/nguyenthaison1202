@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_HinoCarModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DanhMuc">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="order" Type="Int32" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+    <Property Name="img" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MenuHinoCar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="nameMenu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="order" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SanPham">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nameCar" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="trongtai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dongco" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kichthuocthung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="baohanh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="order" Type="Int32" />
+    <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+    <Property Name="img" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="kltoanbo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="klbanthan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sochongoi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="thungnhienlieu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DxRxC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="chieudaicoso" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="vetbanhxe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="khoangcachtruc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="tendongco" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="loaidongco" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="tieuchuankhithai" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dungtichxylanh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="congsuatcucdai" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="momen" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hopso" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="loainhieulieu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phanhtruoc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phanhsau" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phanhdong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soluonglop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TinTuc">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="img1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="des1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="detail1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="order" Type="Int32" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+    <Property Name="img2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="img3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="des2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="des3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="detail2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="detail3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DB_HinoCarEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DanhMucs" EntityType="Self.DanhMuc" />
+    <EntitySet Name="MenuHinoCars" EntityType="Self.MenuHinoCar" />
+    <EntitySet Name="SanPhams" EntityType="Self.SanPham" />
+    <EntitySet Name="TinTucs" EntityType="Self.TinTuc" />
+  </EntityContainer>
+</Schema>

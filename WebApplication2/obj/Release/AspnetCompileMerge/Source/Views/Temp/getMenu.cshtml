@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebApplication2.Models.MenuHinoCar>
+
+@*<div class="navbar-nav py-0">
+        @foreach (var i in Model)
+        {
+         <a href="/@i.meta" class="nav-item nav-link" >@i.nameMenu</a>
+        }
+    </div>*@
+@foreach (var i in Model)
+{
+    <li>
+        <a href="/@i.meta" class="nav-top-link" style="text-decoration:none">@i.nameMenu</a>
+    </li>
+}

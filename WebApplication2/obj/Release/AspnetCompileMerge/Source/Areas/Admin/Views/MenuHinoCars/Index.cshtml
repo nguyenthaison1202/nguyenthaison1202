@@ -1,0 +1,80 @@
+﻿@using WebApplication2.Helps
+@model IEnumerable<WebApplication2.Models.MenuHinoCar>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<style>
+    th, td {
+        text-align: justify-all;
+    }
+
+        td p {
+            height: 50px;
+            overflow-y: hidden;
+            text-overflow: ellipsis;
+        }
+</style>
+@section _Header
+{
+    <!-- DataTables CSS -->
+    <link href="~/AssetsAdmin/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="~/AssetsAdmin/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+}
+<p>
+    @Html.NoEncodeActionLink("<span class='fas fa-plus'></span> Thêm mới", "Create", "Create", "MenuHinoCars", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+</p>
+<table class="table table-striped table-bordered table-hover" id="dataTables-example" style="width:100%">
+    <tr>
+        <th>
+            Tên Menu
+        </th>
+        <th>
+            Hiển thị
+        </th>
+        <th>
+            STT
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nameMenu)
+            </td>
+            <td>
+                @(item.hide==true ? "Hiển thị" : "Ẩn")
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.order)
+            </td>
+            <td>
+                @Html.NoEncodeActionLink("<span class='far fa-edit'></span>", "Edit", "Edit", "MenuHinoCars", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-secondary" })
+                @Html.NoEncodeActionLink("<span class='fas fa-search-plus'></span>", "Detail", "Details", "MenuHinoCars", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                @Html.NoEncodeActionLink("<span class='far fa-trash-alt'></span>", "Delete", "Delete", "MenuHinoCars", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+@section _Footer
+{
+    <!-- DataTables JavaScript -->
+    <script src="~/AssetsAdmin/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="~/AssetsAdmin/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="~/AssetsAdmin/vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+        $(document).ready(function () {
+            $('#dataTables-example').DataTable({
+                responsive: true
+            });
+        });
+    </script>
+
+}

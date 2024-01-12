@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_HinoCarModelStoreContainer" CdmEntityContainer="DB_HinoCarEntities1">
+    <EntitySetMapping Name="DanhMucs">
+      <EntityTypeMapping TypeName="DB_HinoCarModel.DanhMuc">
+        <MappingFragment StoreEntitySet="DanhMuc">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="img" ColumnName="img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuHinoCars">
+      <EntityTypeMapping TypeName="DB_HinoCarModel.MenuHinoCar">
+        <MappingFragment StoreEntitySet="MenuHinoCar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nameMenu" ColumnName="nameMenu" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="order" ColumnName="order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SanPhams">
+      <EntityTypeMapping TypeName="DB_HinoCarModel.SanPham">
+        <MappingFragment StoreEntitySet="SanPham">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="nameCar" ColumnName="nameCar" />
+          <ScalarProperty Name="trongtai" ColumnName="trongtai" />
+          <ScalarProperty Name="dongco" ColumnName="dongco" />
+          <ScalarProperty Name="kichthuocthung" ColumnName="kichthuocthung" />
+          <ScalarProperty Name="baohanh" ColumnName="baohanh" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="kltoanbo" ColumnName="kltoanbo" />
+          <ScalarProperty Name="klbanthan" ColumnName="klbanthan" />
+          <ScalarProperty Name="sochongoi" ColumnName="sochongoi" />
+          <ScalarProperty Name="thungnhienlieu" ColumnName="thungnhienlieu" />
+          <ScalarProperty Name="DxRxC" ColumnName="DxRxC" />
+          <ScalarProperty Name="chieudaicoso" ColumnName="chieudaicoso" />
+          <ScalarProperty Name="vetbanhxe" ColumnName="vetbanhxe" />
+          <ScalarProperty Name="khoangcachtruc" ColumnName="khoangcachtruc" />
+          <ScalarProperty Name="tendongco" ColumnName="tendongco" />
+          <ScalarProperty Name="loaidongco" ColumnName="loaidongco" />
+          <ScalarProperty Name="tieuchuankhithai" ColumnName="tieuchuankhithai" />
+          <ScalarProperty Name="dungtichxylanh" ColumnName="dungtichxylanh" />
+          <ScalarProperty Name="congsuatcucdai" ColumnName="congsuatcucdai" />
+          <ScalarProperty Name="momen" ColumnName="momen" />
+          <ScalarProperty Name="hopso" ColumnName="hopso" />
+          <ScalarProperty Name="loainhieulieu" ColumnName="loainhieulieu" />
+          <ScalarProperty Name="phanhtruoc" ColumnName="phanhtruoc" />
+          <ScalarProperty Name="phanhsau" ColumnName="phanhsau" />
+          <ScalarProperty Name="phanhdong" ColumnName="phanhdong" />
+          <ScalarProperty Name="soluonglop" ColumnName="soluonglop" />
+          <ScalarProperty Name="lop" ColumnName="lop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TinTucs">
+      <EntityTypeMapping TypeName="DB_HinoCarModel.TinTuc">
+        <MappingFragment StoreEntitySet="TinTuc">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="img1" ColumnName="img1" />
+          <ScalarProperty Name="des1" ColumnName="des1" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="detail1" ColumnName="detail1" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="img2" ColumnName="img2" />
+          <ScalarProperty Name="img3" ColumnName="img3" />
+          <ScalarProperty Name="des2" ColumnName="des2" />
+          <ScalarProperty Name="des3" ColumnName="des3" />
+          <ScalarProperty Name="detail2" ColumnName="detail2" />
+          <ScalarProperty Name="detail3" ColumnName="detail3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

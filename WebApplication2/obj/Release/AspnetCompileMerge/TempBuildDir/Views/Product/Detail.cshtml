@@ -1,0 +1,383 @@
+﻿@model WebApplication2.Models.SanPham
+<head>
+    <link href="~/Assets/css/detailTour.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<!-- Packages Start -->
+<div class="wrapper " role="main">
+    <div class="row row-main">
+        <div class="large-12 col">
+            <div class="col-inner">
+                <div class="row row-small">
+                    <div class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+                            <div class="swiffy-slider">
+                                <ul class="slider-container">
+                                    <li class="slider-nav-autoplay"><img src="~/AssetsAdmin/upload/img/product/@Model.img" style="max-width: 100%;height: auto;"></li>
+                                    <li class="slider-nav-autoplay"><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900" style="max-width: 100%;height: auto;"></li>
+                                    <li class="slider-nav-autoplay"><img src="https://source.unsplash.com/49b9l_29ceA/1600x900" style="max-width: 100%;height: auto;"></li>
+                                </ul>
+                                <button type="button" class="slider-nav"></button>
+                                <button type="button" class="slider-nav slider-nav-next"></button>
+                                <div class="slider-indicators">
+                                    <button class="active"></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+                            <div class="product">
+                                <h1>@Model.nameCar</h1>
+                                <p>
+                                    <strong>Tải trọng: <span style="color: #ff0000;">@Model.trongtai kg</span></strong><br>
+                                    <strong>Xuất xứ: <span style="color: #ff0000;">Hino Nhật Bản</span></strong><br>
+                                    <strong>Động cơ:&nbsp;<span style="color: #ff0000;">@Model.dongco</span></strong><br>
+                                    <strong>Kích thước thùng: <span style="color: #ff0000;">@Model.kichthuocthung</span></strong><br>
+                                    <strong>Bảo hành:&nbsp;<span style="color: #ff0000;">36 tháng và không giới hạn số Km trên toàn quốc.</span></strong>
+                                </p>
+                            </div>
+                            <div>
+                                <h4>Showroom xe tải Hino:</h4>
+                                <ul class="list-page">
+                                    <li>
+                                        Số 513 Xa lộ Hà Nội, Khu phố 1, P. Long Bình, Tp. Biên Hòa, tỉnh Đồng Nai
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col medium-3">
+                            <div class="call-pro">
+                                <div class="col-sm-6 call-block">
+                                    <a href="tel:0901625998" class="btn btn-danger"> <i class="icon-phone"></i>0901 625 998<span>&nbsp;(Gọi để nhận chiết khấu)</span></a><p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-small">
+                    <div class="col small-12 large-12">
+                        <div class="col-inner">
+                            <h3><span style="color: #000000;">HỆ THỐNG TRUYỀN ĐỘNG XE TẢI HINO MODEL XZU730L</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-small">
+                    <div class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+                            <div class="box has-hover   has-hover box-text-bottom">
+                                <div class="box-image">
+                                    <div class="">
+                                        <img src="https://hino-nhatban.com/wp-content/uploads/2019/12/noi-that-xe-tai-hino-xzu650l-3.jpg" class="attachment- size-" alt="" decoding="async" loading="lazy" sizes="(max-width: 640px) 100vw, 640px">
+                                    </div>
+                                </div>
+                                <div class="box-text text-center">
+                                    <div class="box-text-inner">
+                                        <p><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><span style="font-size: 14pt;"><span style="color: #000000; font-size: 14px;">Động cơ của xe <a href=""><strong>@Model.nameCar </strong></a> dung tích xy lanh 4009 cm3 công suất lớn nhất lên tới 150PS. Động cơ Euro 4 nối tiếng với mô men xoắn lớn và bền bỉ của HINO được áp dụng những công nghệ cao để giảm phát thải khí xả đồng thời tăng khả năng tiết kiệm nhiên liệu.</span> </span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+                            <div class="box has-hover   has-hover box-text-bottom">
+                                <div class="box-image">
+                                    <div class="">
+                                        <img src="https://hino-nhatban.com/wp-content/uploads/2019/12/noi-that-xe-tai-hino-xzu650l-4.jpg" class="attachment- size-" alt="" decoding="async" loading="lazy" sizes="(max-width: 640px) 100vw, 640px">
+                                    </div>
+                                </div>
+                                <div class="box-text text-center">
+                                    <div class="box-text-inner">
+                                        <p><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><span style="font-size: 14pt;"><span style="color: #000000; font-size: 14px;">Hệ thống truyền động từ động cơ, hộp số tới cầu của xe được sản xuất đồng bộ tại Nhật Bản và lắp ráp tại Việt Nam trên dây truyền đạt chuẩn do Hino Nhật Bản chuyển giao giúp cho mọi hoạt đồng rất êm và hiệu năng cao.</span> </span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row row-small">
+                    <div class="col small-12 large-12">
+                        <div class="col-inner">
+                            <h3><span style="color: #000000;">NỘI THẤT XE TẢI HINO MODEL FC9JLTC</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-small">
+                    <div class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+                            <div class="box has-hover   has-hover box-text-bottom">
+                                <div class="box-image">
+                                    <div class="">
+                                        <img src="https://hino-nhatban.com/wp-content/uploads/2020/01/cabin-xe-tai-hino-s500-1.jpg" class="attachment- size-" alt="" decoding="async" loading="lazy" sizes="(max-width: 640px) 100vw, 640px">
+                                    </div>
+                                </div>
+                                <div class="box-text text-center">
+                                    <div class="box-text-inner">
+                                        <p><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><span style="font-size: 14pt;"><span style="color: #000000; font-size: 14px;">Ghế ngồi <a href=""><strong>xe tải hino 6.7 tấn </strong></a> được bọc da cao cấp có màu xám ghi sang trọng. Sạch sẽ dễ dàng vệ sinh.</span> </span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+                            <div class="box has-hover   has-hover box-text-bottom">
+                                <div class="box-image">
+                                    <div class="">
+                                        <img src="https://hino-nhatban.com/wp-content/uploads/2019/12/noi-that-xe-tai-hino-xzu650l-2.jpg" class="attachment- size-" alt="" decoding="async" loading="lazy" sizes="(max-width: 640px) 100vw, 640px">
+                                    </div>
+                                </div>
+                                <div class="box-text text-center">
+                                    <div class="box-text-inner">
+                                        <p><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><span style="font-size: 14pt;"><span style="color: #000000; font-size: 14px;">Ghế ngồi <a href=""><strong>xe tải hino 6.7 tấn </strong></a> được bọc da cao cấp có màu xám ghi sang trọng. Sạch sẽ dễ dàng vệ sinh.</span> </span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="padding-left:7px"><span style="font-size: 90%;"><strong>Hino XZU650L 1T8 thùng kín</strong>&nbsp;nằm trong phân khúc&nbsp;<a href="https://hino-nhatban.com/xe-tai-hino-1-9-tan-thung-mui-bat/">xe tải Hino 1.9 tấn</a>&nbsp;có thiết kế rất trang nhã, lôi cuốn. Mặt ga lăng với các khe thoáng khí giúp làm mát đồng cơ nhanh hơn. Gương chiếu hậu kép, đèn halogen bản to kết hợp với đèn sương mù cho góc chiếu rộng hơn, hạn chế điểm mũ, an toàn cao. Kiểu dáng khí động học cùng với các đường nét bo tròn giúp xe giảm sức cản không khí, tiết kiệm nhiên liệu đồng thời cũng tạo nên vẻ đẹp tinh tế cho sản phẩm. Các bộ phận xe được cấu tạo hài hòa với nhau, tạo tổng thể vô cùng bắt mắt.</span></p>
+                    <p style="padding-left:7px"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><span style="font-size: 14pt;"><span style="color: #000000; font-size: 14px;">Đại lý xe tải Hino Tín Hưng Thịnh chuyên đóng các loại thùng kín, thùng đông lạnh, thùng mui bạt, thùng lửng, xe gắn cẩu… theo yêu cầu quý khách. Phù hợp với tất cả các loại hàng hóa trên thị trường: Chở sắt, thép, nội thất, gia cầm, hải sản, điện tử, điện lạnh, đồ gỗ, đất, cát…</span> </span></span></p>
+
+                </div>
+                <div class="row row-small">
+                    <div id="col" class="col small-12 large-12">
+                        <div class="col-inner">
+                            <div class="row row-small">
+                                <div id="col" class="col small-12 large-12">
+                                    <div class="col-inner">
+                                        <h3><span style="color: #000000;">CÁC LOẠI THÙNG XE TẢI HINO</span></h3>
+                                        <div class="row row-small">
+                                            <div class="col medium-6 small-12 large-6">
+                                                <div class="col-inner">
+                                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1481693330">
+                                                        <div class="img-inner box-shadow-2 dark">
+                                                            <img src="https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-kin-71.jpg" class="attachment-large size-large" alt="" decoding="async" loading="lazy" srcset="https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-kin-71.jpg 640w, https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-kin-71-595x400.jpg 595w" sizes="(max-width: 640px) 100vw, 640px">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col medium-6 small-12 large-6">
+                                                <div class="col-inner">
+                                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1905602066">
+                                                        <div class="img-inner box-shadow-2 dark">
+                                                            <img src="https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-bat-61.jpg" class="attachment-large size-large" alt="" decoding="async" loading="lazy" srcset="https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-bat-61.jpg 640w, https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-bat-61-595x400.jpg 595w" sizes="(max-width: 640px) 100vw, 640px">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-small">
+                                            <div class="col medium-6 small-12 large-6">
+                                                <div class="col-inner">
+                                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1996318098">
+                                                        <div class="img-inner box-shadow-2 dark">
+                                                            <img src="https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-dong-lanh-61.jpg" class="attachment-large size-large" alt="" decoding="async" loading="lazy" srcset="https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-dong-lanh-61.jpg 640w, https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-dong-lanh-61-595x400.jpg 595w" sizes="(max-width: 640px) 100vw, 640px">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col medium-6 small-12 large-6">
+                                                <div class="col-inner">
+                                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1230712977">
+                                                        <div class="img-inner box-shadow-2 dark">
+                                                            <img src="https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-lung-4.jpg" class="attachment-large size-large" alt="" decoding="async" loading="lazy" srcset="https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-lung-4.jpg 640w, https://hino-nhatban.com/wp-content/uploads/2020/01/xe-tai-hino-fc-thung-lung-4-595x400.jpg 595w" sizes="(max-width: 640px) 100vw, 640px">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-small">
+                    <div class="col small-12 large-12">
+                        <div class="col-inner">
+                            <h3><span style="color: #000000;">TRANG BỊ TIÊU CHUẨN</span></h3>
+                            <table style="width: 100%; border-collapse: collapse; height: 21px;" border="0">
+                                <tbody>
+                                    <tr style="height: 21px;">
+                                        <td style="width: 50%; height: 21px;">
+                                            <ul class="list-check">
+                                                <li><span style="color: #000000;">2 tấm che nắng cho tài xế và phụ xế</span></li>
+                                                <li><span style="color: #000000;">Kính chỉnh điện và khóa cửa trung tâm</span></li>
+                                                <li><span style="color: #000000;">Tay nắm cửa an toàn bên trong</span></li>
+                                                <li><span style="color: #000000;">Núm mồi thuốc</span></li>
+                                                <li><span style="color: #000000;">Máy lạnh (Tùy chọn)</span></li>
+                                            </ul>
+                                        </td>
+                                        <td style="width: 50%; height: 21px;">
+                                            <ul class="list-check">
+                                                <li><span style="color: #000000;">Dây an toàn 3 điểm</span></li>
+                                                <li><span style="color: #000000;">Kèn báo lùi</span></li>
+                                                <li><span style="color: #000000;">Hệ thống làm mát và sưởi</span></li>
+                                                <li><span style="color: #000000;">Hộp đen lưu dữ liệu hoạt động của xe DRM</span></li>
+                                                <li><span style="color: #000000;">CD-MP3, AM-FM radio</span></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-small">
+                    <div class="col small-12 large-12">
+                        <div class="col-inner">
+                            <h3><span style="color: #000000;">THÔNG SỐ KỸ THUẬT</span></h3>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Khối lượng toàn bộ</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">kg</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.kltoanbo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Khối lượng bản thân</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">kg</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.klbanthan</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Số chỗ ngồi</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">Người</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.sochongoi</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Thùng nhiên liệu</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">Lít</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.thungnhienlieu</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Kích thước tổng thể DxRxC</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">mm</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.DxRxC</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Chiều dài cơ sở</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">mm</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.chieudaicoso</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Vệt bánh xe trước – sau</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">mm</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">	@Model.vetbanhxe </span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Khoảng cách trục</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">mm</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.khoangcachtruc</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Tên động cơ</span></td>
+                                        <td>&nbsp;</td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.tendongco</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Loại động cơ</span></td>
+                                        <td>&nbsp;</td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.loaidongco</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Tiêu chuẩn khí thải</span></td>
+                                        <td>&nbsp;</td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.tieuchuankhithai</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Dung tích xy lanh</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">cc</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.dungtichxylanh</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Công suất cực đại (ISO NET)</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;"> PS</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.congsuatcucdai</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Mômen xoắn cực đại (ISO NET)</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">N.m</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.momen</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Hộp số cơ khí MYY6S </span></td>
+                                        <td>&nbsp;</td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.hopso</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Loại nhiên liệu</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;"></span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.loainhieulieu</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Phanh trước /Dẫn động</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;"></span></td>
+                                        <td><span style="font-size: 14px; color: #000000;"> @Model.phanhtruoc</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Phanh sau /Dẫn động</span></td>
+                                        <td><span style="font-size: 14px; color: #000000;"></span></td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.phanhsau</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Phanh tay /Dẫn động</span></td>
+                                        <td>&nbsp;</td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.phanhdong</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Số lượng lốp trên trục I/II/III/IV</span></td>
+                                        <td>&nbsp;</td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.soluonglop</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="font-size: 14px; color: #000000;">Lốp trước / sau</span></td>
+                                        <td>&nbsp;</td>
+                                        <td><span style="font-size: 14px; color: #000000;">@Model.lop</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-small">
+                    <div class="col small-12 large-12">
+                        <div class="col-inner">
+                            <h3><span style="color: #d83131;">TẠI SAO NÊN CHỌN ĐẠI LÝ HINO NHẬT BẢN?</span></h3>
+                            <div class="row">
+                                <div class="col medium-6 small-12 large-6">
+                                    <div class="col-inner">
+                                        <ul>
+                                            <li style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><span style="color: #000000;">Đại lý Hino Nhật Bản có đội ngũ Cán bộ nhân viên có bề dầy kinh nghiệm, làm việc chuyên nghiệp, tận tâm phục vụ khách hàng.</span></li>
+                                            <li style="font-size: 14px; font-family: arial, helvetica, sans-serif;"><span style="color: #000000;">Sẵn sàng đáp ứng tất cả các yêu cầu về các chủng loại xe tải Hino, màu sắc xe cho tới các loại thùng xe chở hàng tới Quý khách hàng.</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col medium-6 small-12 large-6">
+                                    <div class="col-inner">
+                                        <ul>
+                                            <li style="font-size: 14px; font-family: arial, helvetica, sans-serif;">Tự hào là Đại lý có hệ thống cơ sở hạ tầng Đại lý được đầu tư xây dựng đồng bộ hiện đại nhất theo tiêu chuẩn&nbsp;<strong>Hino Việt Nam.</strong></li>
+                                            <li style="font-size: 14px; font-family: arial, helvetica, sans-serif;">Chúng tôi luôn không ngừng hướng đến những chính sách, dịch vụ hậu mãi sau bán hàng nhằm phục vụ khách hàng tốt nhất có thể.</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Packages End -->

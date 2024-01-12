@@ -1,0 +1,144 @@
+﻿@model WebApplication2.Models.TinTuc
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TinTuc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.img1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.img1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.des1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.des1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.detail1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detail1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.meta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.meta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hide)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hide)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.order)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.order)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.datebegin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datebegin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.img2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.img2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.img3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.img3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.des2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.des2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.des3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.des3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.detail2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detail2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.detail3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detail3)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

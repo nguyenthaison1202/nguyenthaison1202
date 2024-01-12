@@ -1,0 +1,71 @@
+﻿@using WebApplication2.Helps;
+@model IEnumerable<WebApplication2.Models.SanPham>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            STT
+        </th>
+        <th>
+            Tên Xe
+        </th>
+        <th>
+            Trọng tải
+        </th>
+        <th>
+            Động cơ
+        </th>
+        <th>
+            Hiển thị
+        </th>
+        <th>
+            Hình ảnh
+        </th>
+        <th>
+            Ngày cập nhật
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.order)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nameCar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.trongtai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dongco)
+            </td>
+            <td>
+                @(item.hide==true ? "Hiển thị" : "Ẩn")
+            </td>
+            <td>
+                <img src="~/AssetsAdmin/upload/img/product/@item.img" style="width:50px" />
+            </td>
+            <td>
+                @(item.datebegin.HasValue ? item.datebegin.Value.ToString("dd/MM/yyyy") : "")
+            </td>
+            <td>
+                @Html.NoEncodeActionLink("<span class='far fa-edit'></span>", "Edit", "Edit", "SanPhams", routeValues: new { id = item.ID }, htmlAttributes: new { data_modal = "", @class = "btn btn-secondary" })
+                @Html.NoEncodeActionLink("<span class='fas fa-search-plus'></span>", "Detail", "Details", "SanPhams", routeValues: new { id = item.ID }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                @Html.NoEncodeActionLink("<span class='far fa-trash-alt'></span>", "Delete", "Delete", "SanPhams", routeValues: new { id = item.ID }, htmlAttributes: new { data_modal = "", @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>

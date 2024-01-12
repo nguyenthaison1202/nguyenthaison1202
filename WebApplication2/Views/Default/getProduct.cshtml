@@ -1,0 +1,36 @@
+﻿@model List<WebApplication2.Models.SanPham>
+<div class="row row-small">
+    @foreach (var i in Model)
+    {
+        <div class="col medium-3 small-6 large-3">
+            <div class="col-inner">
+                <div class="box has-hover   has-hover box-shadow-1 box-text-bottom">
+                    <div class="box-image">
+                        <a href="/@ViewBag.meta/@i.meta/@i.ID">
+                            <div class="image-zoom-fade">
+                                <img width="320" height="240" src="~/AssetsAdmin/upload/img/product/@i.img"class="attachment- size-" alt="" decoding="async" loading="lazy">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-text text-center">
+                        <div class="box-text-inner">
+                            <div class="product_s_title">
+                                <p><a style="text-decoration:none" href="/@ViewBag.meta/@i.meta/@i.ID"><strong>@i.nameCar </strong></a></p>
+                            </div>
+                            <div class="product_s_desc">
+                                <p><strong>Trọng tải:</strong>&nbsp;@i.trongtai</p>
+                                <p><strong>Động cơ:</strong> @i.dongco</p>
+                                <p><strong>Kích thước thùng:</strong>@i.kichthuocthung</p>
+                                <p><strong>Bảo hành:</strong>@i.baohanh</p>
+                            </div>
+                            <div class="box-more-xe">
+                                <a style="text-decoration:none" href="/@ViewBag.meta/@i.meta/@i.ID" class="danhgia-more">Xem chi tiết</a>
+                                <a   href="tel:0901625998" class="baogia-more dang-ky pum-trigger" style="cursor: pointer; text-decoration: none">Nhận báo giá</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

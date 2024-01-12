@@ -1,0 +1,80 @@
+﻿@model IEnumerable<WebApplication2.Models.TinTuc>
+@{
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<!-- Blog Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+            <h6 class="text-body text-uppercase" style="letter-spacing: 5px;">Tin Tức</h6>
+            <h1>Tin tức mới nhất về chúng tôi</h1>
+        </div>
+        <div class="row pb-3">
+            @foreach (var i in Model)
+            {
+                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="~/AssetsAdmin/upload/img/tintuc/@i.img1" alt="">
+                            <div class="blog-date">
+                                <h6 class="font-weight-bold mb-n1">01</h6>
+                                <small class="text-white text-uppercase">Jan</small>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4">
+                            <div class="d-flex mb-2">
+                                <a class="text-primary text-uppercase text-decoration-none">Tin Tức</a>
+                                <span class="text-body px-2">|</span>
+                                <a class="text-body text-uppercase text-decoration-none">HINO</a>
+                            </div>
+                            <a class="h5 m-0 text-decoration-none" href="/@ViewBag.meta/@i.id">@i.name</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+<!-- Feature Start -->
+<div class="container-fluid pb-5">
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="d-flex mb-4 mb-lg-0">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center mr-3" style="height: 100px; width: 100px; background-color: #d41d08 ">
+                        <i class="fa fa-2x fa-money-check-alt text-white"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h5 class="">Ngân hàng</h5>
+                        <p class="m-0">Hỗ trợ mua xe tải Hino trả góp tới 85% giá trị xe. Đội ngũ chuyên viên giàu kinh nghiệm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex mb-4 mb-lg-0">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center mr-3" style="height: 100px; width: 100px; background-color: #d41d08 ">
+                        <i class="fa fa-2x fa-award text-white"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h5 class="">Trung tâm dịch vụ</h5>
+                        <p class="m-0">Chính sách bảo hành & chăm sóc khách hàng toàn diện.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex mb-4 mb-lg-0">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center  mr-3" style="height: 100px; width: 100px; background-color: #d41d08 ">
+                        <i class="fa fa-2x fa-globe text-white"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h5 class="">Địa chỉ chi nhánh CTY</h5>
+                        <p class="m-0">Số 513 Xa lộ Hà Nội,Khu phố 1, P. Long Bình, Tp. Biên Hòa, tỉnh Đồng Nai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End -->

@@ -1,0 +1,124 @@
+﻿@model WebApplication2.Models.TinTuc
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Chi Tiết</h2>
+
+<div>
+    <h4>TinTuc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            Hình ảnh 1
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.img1)
+        </dd>
+
+        <dt>
+            Tiêu đề 1
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.des1)
+        </dd>
+
+
+        <dt>
+            Chi tiết tiêu đề 1
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detail1)
+        </dd>
+
+
+        <dt>
+            Hiển thị
+        </dt>
+
+        <dd>
+            @(Model.hide==true ? "Hiển thị" : "Ẩn")
+        </dd>
+
+        <dt>
+            STT
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.order)
+        </dd>
+
+        <dt>
+            Ngày cập nhật
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datebegin)
+        </dd>
+
+        <dt>
+            Hình ảnh 2
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.img2)
+        </dd>
+
+        <dt>
+            Hình ảnh 3
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.img3)
+        </dd>
+
+        <dt>
+            Tiêu đề 2
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.des2)
+        </dd>
+
+        <dt>
+            Tiêu đề 3
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.des3)
+        </dd>
+
+        <dt>
+            Chi tiết tiêu đề 2
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detail2)
+        </dd>
+
+        <dt>
+            Chi tiết tiêu đề 3
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detail3)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

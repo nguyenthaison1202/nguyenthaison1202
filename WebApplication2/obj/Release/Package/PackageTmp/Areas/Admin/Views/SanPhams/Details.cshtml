@@ -1,0 +1,266 @@
+﻿@model WebApplication2.Models.SanPham
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SanPham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nameCar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nameCar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.trongtai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trongtai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dongco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dongco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kichthuocthung)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kichthuocthung)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baohanh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baohanh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hide)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hide)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.order)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.order)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.meta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.meta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.datebegin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datebegin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.img)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.img)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kltoanbo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kltoanbo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.klbanthan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.klbanthan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sochongoi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sochongoi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thungnhienlieu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thungnhienlieu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DxRxC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DxRxC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.chieudaicoso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chieudaicoso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vetbanhxe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vetbanhxe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.khoangcachtruc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.khoangcachtruc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tendongco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tendongco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.loaidongco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.loaidongco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tieuchuankhithai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tieuchuankhithai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dungtichxylanh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dungtichxylanh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.congsuatcucdai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.congsuatcucdai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.momen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.momen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hopso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hopso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.loainhieulieu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.loainhieulieu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phanhtruoc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phanhtruoc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phanhsau)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phanhsau)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phanhdong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phanhdong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.soluonglop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.soluonglop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lop)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

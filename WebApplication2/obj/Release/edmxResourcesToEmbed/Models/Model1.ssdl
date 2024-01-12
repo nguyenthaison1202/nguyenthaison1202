@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_HinoCarModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DanhMuc">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="link" Type="nvarchar" MaxLength="50" />
+    <Property Name="meta" Type="nvarchar" MaxLength="50" />
+    <Property Name="hide" Type="bit" />
+    <Property Name="order" Type="int" />
+    <Property Name="datebegin" Type="smalldatetime" />
+    <Property Name="img" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="MenuHinoCar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nameMenu" Type="nvarchar" MaxLength="50" />
+    <Property Name="link" Type="nvarchar(max)" />
+    <Property Name="meta" Type="nvarchar" MaxLength="50" />
+    <Property Name="hide" Type="bit" />
+    <Property Name="order" Type="int" />
+  </EntityType>
+  <EntityType Name="SanPham">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nameCar" Type="nvarchar(max)" />
+    <Property Name="trongtai" Type="nvarchar" MaxLength="50" />
+    <Property Name="dongco" Type="nvarchar" MaxLength="50" />
+    <Property Name="kichthuocthung" Type="nvarchar" MaxLength="50" />
+    <Property Name="baohanh" Type="nvarchar(max)" />
+    <Property Name="hide" Type="bit" />
+    <Property Name="order" Type="int" />
+    <Property Name="meta" Type="nvarchar" MaxLength="50" />
+    <Property Name="datebegin" Type="smalldatetime" />
+    <Property Name="img" Type="nvarchar(max)" />
+    <Property Name="kltoanbo" Type="nvarchar(max)" />
+    <Property Name="klbanthan" Type="nvarchar(max)" />
+    <Property Name="sochongoi" Type="nvarchar(max)" />
+    <Property Name="thungnhienlieu" Type="nvarchar(max)" />
+    <Property Name="DxRxC" Type="nvarchar(max)" />
+    <Property Name="chieudaicoso" Type="nvarchar(max)" />
+    <Property Name="vetbanhxe" Type="nvarchar(max)" />
+    <Property Name="khoangcachtruc" Type="nvarchar(max)" />
+    <Property Name="tendongco" Type="nvarchar(max)" />
+    <Property Name="loaidongco" Type="nvarchar(max)" />
+    <Property Name="tieuchuankhithai" Type="nvarchar(max)" />
+    <Property Name="dungtichxylanh" Type="nvarchar(max)" />
+    <Property Name="congsuatcucdai" Type="nvarchar(max)" />
+    <Property Name="momen" Type="nvarchar(max)" />
+    <Property Name="hopso" Type="nvarchar(max)" />
+    <Property Name="loainhieulieu" Type="nvarchar" MaxLength="50" />
+    <Property Name="phanhtruoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="phanhsau" Type="nvarchar" MaxLength="50" />
+    <Property Name="phanhdong" Type="nvarchar" MaxLength="50" />
+    <Property Name="soluonglop" Type="nvarchar" MaxLength="50" />
+    <Property Name="lop" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TinTuc">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="img1" Type="nvarchar(max)" />
+    <Property Name="des1" Type="nvarchar(max)" />
+    <Property Name="link" Type="nvarchar(max)" />
+    <Property Name="detail1" Type="nvarchar(max)" />
+    <Property Name="meta" Type="nvarchar" MaxLength="50" />
+    <Property Name="hide" Type="bit" />
+    <Property Name="order" Type="int" />
+    <Property Name="datebegin" Type="smalldatetime" />
+    <Property Name="img2" Type="nvarchar" MaxLength="50" />
+    <Property Name="img3" Type="nvarchar" MaxLength="50" />
+    <Property Name="des2" Type="nvarchar(max)" />
+    <Property Name="des3" Type="nvarchar(max)" />
+    <Property Name="detail2" Type="nvarchar(max)" />
+    <Property Name="detail3" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="DB_HinoCarModelStoreContainer">
+    <EntitySet Name="DanhMuc" EntityType="Self.DanhMuc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MenuHinoCar" EntityType="Self.MenuHinoCar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SanPham" EntityType="Self.SanPham" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TinTuc" EntityType="Self.TinTuc" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

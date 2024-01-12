@@ -1,0 +1,13 @@
+﻿@model List<WebApplication2.Models.DanhMuc>
+@foreach (var i in Model)
+{
+    <div class="container section-title-container" style="margin-block:10px">
+        <h3 class="section-title section-title-normal">
+            <b></b>
+            <span class="section-title-main">@i.name</span>
+            <b></b>
+        </h3>
+    </div>
+    @Html.Action("getProduct", "Default", new { meta = i.meta })
+}
+

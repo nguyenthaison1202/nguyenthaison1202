@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DB_HinoCarModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DanhMuc">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" />
+          <Property Name="link" Type="nvarchar" MaxLength="50" />
+          <Property Name="meta" Type="nvarchar" MaxLength="50" />
+          <Property Name="hide" Type="bit" />
+          <Property Name="order" Type="int" />
+          <Property Name="datebegin" Type="smalldatetime" />
+          <Property Name="img" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="MenuHinoCar">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="nameMenu" Type="nvarchar" MaxLength="50" />
+          <Property Name="link" Type="nvarchar(max)" />
+          <Property Name="meta" Type="nvarchar" MaxLength="50" />
+          <Property Name="hide" Type="bit" />
+          <Property Name="order" Type="int" />
+        </EntityType>
+        <EntityType Name="SanPham">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nameCar" Type="nvarchar(max)" />
+          <Property Name="trongtai" Type="nvarchar" MaxLength="50" />
+          <Property Name="dongco" Type="nvarchar" MaxLength="50" />
+          <Property Name="kichthuocthung" Type="nvarchar" MaxLength="50" />
+          <Property Name="baohanh" Type="nvarchar(max)" />
+          <Property Name="hide" Type="bit" />
+          <Property Name="order" Type="int" />
+          <Property Name="meta" Type="nvarchar" MaxLength="50" />
+          <Property Name="datebegin" Type="smalldatetime" />
+          <Property Name="img" Type="nvarchar(max)" />
+          <Property Name="kltoanbo" Type="nvarchar(max)" />
+          <Property Name="klbanthan" Type="nvarchar(max)" />
+          <Property Name="sochongoi" Type="nvarchar(max)" />
+          <Property Name="thungnhienlieu" Type="nvarchar(max)" />
+          <Property Name="DxRxC" Type="nvarchar(max)" />
+          <Property Name="chieudaicoso" Type="nvarchar(max)" />
+          <Property Name="vetbanhxe" Type="nvarchar(max)" />
+          <Property Name="khoangcachtruc" Type="nvarchar(max)" />
+          <Property Name="tendongco" Type="nvarchar(max)" />
+          <Property Name="loaidongco" Type="nvarchar(max)" />
+          <Property Name="tieuchuankhithai" Type="nvarchar(max)" />
+          <Property Name="dungtichxylanh" Type="nvarchar(max)" />
+          <Property Name="congsuatcucdai" Type="nvarchar(max)" />
+          <Property Name="momen" Type="nvarchar(max)" />
+          <Property Name="hopso" Type="nvarchar(max)" />
+          <Property Name="loainhieulieu" Type="nvarchar" MaxLength="50" />
+          <Property Name="phanhtruoc" Type="nvarchar" MaxLength="50" />
+          <Property Name="phanhsau" Type="nvarchar" MaxLength="50" />
+          <Property Name="phanhdong" Type="nvarchar" MaxLength="50" />
+          <Property Name="soluonglop" Type="nvarchar" MaxLength="50" />
+          <Property Name="lop" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TinTuc">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar(max)" />
+          <Property Name="img1" Type="nvarchar(max)" />
+          <Property Name="des1" Type="nvarchar(max)" />
+          <Property Name="link" Type="nvarchar(max)" />
+          <Property Name="detail1" Type="nvarchar(max)" />
+          <Property Name="meta" Type="nvarchar" MaxLength="50" />
+          <Property Name="hide" Type="bit" />
+          <Property Name="order" Type="int" />
+          <Property Name="datebegin" Type="smalldatetime" />
+          <Property Name="img2" Type="nvarchar" MaxLength="50" />
+          <Property Name="img3" Type="nvarchar" MaxLength="50" />
+          <Property Name="des2" Type="nvarchar(max)" />
+          <Property Name="des3" Type="nvarchar(max)" />
+          <Property Name="detail2" Type="nvarchar(max)" />
+          <Property Name="detail3" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="DB_HinoCarModelStoreContainer">
+          <EntitySet Name="DanhMuc" EntityType="Self.DanhMuc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MenuHinoCar" EntityType="Self.MenuHinoCar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SanPham" EntityType="Self.SanPham" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TinTuc" EntityType="Self.TinTuc" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB_HinoCarModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DanhMuc">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="link" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="hide" Type="Boolean" />
+          <Property Name="order" Type="Int32" />
+          <Property Name="datebegin" Type="DateTime" Precision="0" />
+          <Property Name="img" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MenuHinoCar">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="nameMenu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="hide" Type="Boolean" />
+          <Property Name="order" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SanPham">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nameCar" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="trongtai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dongco" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kichthuocthung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="baohanh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="hide" Type="Boolean" />
+          <Property Name="order" Type="Int32" />
+          <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="datebegin" Type="DateTime" Precision="0" />
+          <Property Name="img" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="kltoanbo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="klbanthan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="sochongoi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="thungnhienlieu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DxRxC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="chieudaicoso" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="vetbanhxe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="khoangcachtruc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="tendongco" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="loaidongco" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="tieuchuankhithai" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="dungtichxylanh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="congsuatcucdai" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="momen" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="hopso" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="loainhieulieu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phanhtruoc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phanhsau" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phanhdong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="soluonglop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="lop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TinTuc">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="img1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="des1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="detail1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="hide" Type="Boolean" />
+          <Property Name="order" Type="Int32" />
+          <Property Name="datebegin" Type="DateTime" Precision="0" />
+          <Property Name="img2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="img3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="des2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="des3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="detail2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="detail3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="DB_HinoCarEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DanhMucs" EntityType="Self.DanhMuc" />
+          <EntitySet Name="MenuHinoCars" EntityType="Self.MenuHinoCar" />
+          <EntitySet Name="SanPhams" EntityType="Self.SanPham" />
+          <EntitySet Name="TinTucs" EntityType="Self.TinTuc" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DB_HinoCarModelStoreContainer" CdmEntityContainer="DB_HinoCarEntities1">
+          <EntitySetMapping Name="DanhMucs">
+            <EntityTypeMapping TypeName="DB_HinoCarModel.DanhMuc">
+              <MappingFragment StoreEntitySet="DanhMuc">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="link" ColumnName="link" />
+                <ScalarProperty Name="meta" ColumnName="meta" />
+                <ScalarProperty Name="hide" ColumnName="hide" />
+                <ScalarProperty Name="order" ColumnName="order" />
+                <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+                <ScalarProperty Name="img" ColumnName="img" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MenuHinoCars">
+            <EntityTypeMapping TypeName="DB_HinoCarModel.MenuHinoCar">
+              <MappingFragment StoreEntitySet="MenuHinoCar">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nameMenu" ColumnName="nameMenu" />
+                <ScalarProperty Name="link" ColumnName="link" />
+                <ScalarProperty Name="meta" ColumnName="meta" />
+                <ScalarProperty Name="hide" ColumnName="hide" />
+                <ScalarProperty Name="order" ColumnName="order" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SanPhams">
+            <EntityTypeMapping TypeName="DB_HinoCarModel.SanPham">
+              <MappingFragment StoreEntitySet="SanPham">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="nameCar" ColumnName="nameCar" />
+                <ScalarProperty Name="trongtai" ColumnName="trongtai" />
+                <ScalarProperty Name="dongco" ColumnName="dongco" />
+                <ScalarProperty Name="kichthuocthung" ColumnName="kichthuocthung" />
+                <ScalarProperty Name="baohanh" ColumnName="baohanh" />
+                <ScalarProperty Name="hide" ColumnName="hide" />
+                <ScalarProperty Name="order" ColumnName="order" />
+                <ScalarProperty Name="meta" ColumnName="meta" />
+                <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+                <ScalarProperty Name="img" ColumnName="img" />
+                <ScalarProperty Name="kltoanbo" ColumnName="kltoanbo" />
+                <ScalarProperty Name="klbanthan" ColumnName="klbanthan" />
+                <ScalarProperty Name="sochongoi" ColumnName="sochongoi" />
+                <ScalarProperty Name="thungnhienlieu" ColumnName="thungnhienlieu" />
+                <ScalarProperty Name="DxRxC" ColumnName="DxRxC" />
+                <ScalarProperty Name="chieudaicoso" ColumnName="chieudaicoso" />
+                <ScalarProperty Name="vetbanhxe" ColumnName="vetbanhxe" />
+                <ScalarProperty Name="khoangcachtruc" ColumnName="khoangcachtruc" />
+                <ScalarProperty Name="tendongco" ColumnName="tendongco" />
+                <ScalarProperty Name="loaidongco" ColumnName="loaidongco" />
+                <ScalarProperty Name="tieuchuankhithai" ColumnName="tieuchuankhithai" />
+                <ScalarProperty Name="dungtichxylanh" ColumnName="dungtichxylanh" />
+                <ScalarProperty Name="congsuatcucdai" ColumnName="congsuatcucdai" />
+                <ScalarProperty Name="momen" ColumnName="momen" />
+                <ScalarProperty Name="hopso" ColumnName="hopso" />
+                <ScalarProperty Name="loainhieulieu" ColumnName="loainhieulieu" />
+                <ScalarProperty Name="phanhtruoc" ColumnName="phanhtruoc" />
+                <ScalarProperty Name="phanhsau" ColumnName="phanhsau" />
+                <ScalarProperty Name="phanhdong" ColumnName="phanhdong" />
+                <ScalarProperty Name="soluonglop" ColumnName="soluonglop" />
+                <ScalarProperty Name="lop" ColumnName="lop" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TinTucs">
+            <EntityTypeMapping TypeName="DB_HinoCarModel.TinTuc">
+              <MappingFragment StoreEntitySet="TinTuc">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="img1" ColumnName="img1" />
+                <ScalarProperty Name="des1" ColumnName="des1" />
+                <ScalarProperty Name="link" ColumnName="link" />
+                <ScalarProperty Name="detail1" ColumnName="detail1" />
+                <ScalarProperty Name="meta" ColumnName="meta" />
+                <ScalarProperty Name="hide" ColumnName="hide" />
+                <ScalarProperty Name="order" ColumnName="order" />
+                <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+                <ScalarProperty Name="img2" ColumnName="img2" />
+                <ScalarProperty Name="img3" ColumnName="img3" />
+                <ScalarProperty Name="des2" ColumnName="des2" />
+                <ScalarProperty Name="des3" ColumnName="des3" />
+                <ScalarProperty Name="detail2" ColumnName="detail2" />
+                <ScalarProperty Name="detail3" ColumnName="detail3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

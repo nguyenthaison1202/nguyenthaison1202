@@ -1,0 +1,82 @@
+﻿@using WebApplication2.Helps
+@model IEnumerable<WebApplication2.Models.TinTuc>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tin Tức</h2>
+
+<p>
+    @Html.NoEncodeActionLink("<span class='fas fa-plus'></span> Thêm mới", "Create", "Create", "TinTucs", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Tên
+        </th>
+        <th>
+            Hình Ảnh 1
+        </th>
+        <th>
+            Hiển thị
+        </th>
+        <th>
+            STT
+        </th>
+        <th>
+            Ngày cập nhật
+        </th>
+        <th>
+            Hình Ảnh 2
+        </th>
+        <th>
+            Hình Ảnh 3
+        </th>
+        <th>
+            Tiêu đề 2
+        </th>
+        <th>
+            Tiêu đề 3
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            <img src="~/AssetsAdmin/upload/img/tintuc/@item.img1" style="width:50px" />
+        </td>
+        <td>
+            @(item.hide==true ? "Hiển thị" : "Ẩn")
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.order)
+        </td>
+        <td>
+            @(item.datebegin.HasValue ? item.datebegin.Value.ToString("dd/MM/yyyy") : "")
+        </td>
+        <td>
+            <img src="~/AssetsAdmin/upload/img/tintuc/@item.img2" style="width:50px" />
+        </td>
+        <td>
+            <img src="~/AssetsAdmin/upload/img/tintuc/@item.img3" style="width:50px" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.des2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.des3)
+        </td>
+        <td>
+            @Html.NoEncodeActionLink("<span class='far fa-edit'></span>", "Edit", "Edit", "TinTucs", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-secondary" })
+            @Html.NoEncodeActionLink("<span class='fas fa-search-plus'></span>", "Detail", "Details", "TinTucs", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+            @Html.NoEncodeActionLink("<span class='far fa-trash-alt'></span>", "Delete", "Delete", "TinTucs", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

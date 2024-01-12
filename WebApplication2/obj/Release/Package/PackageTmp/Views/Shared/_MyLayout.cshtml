@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Đại Lý Xe Tải Hino Chính Hãng - Hino Trường Vinh</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <!-- Favicon -->
+    <link href="~/Assets/img/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="~/Assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/Assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="~/Assets/css/style.css" rel="stylesheet">
+    <link href="~/Assets/css/style2.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="nav-bar-menu">
+        <input type="checkbox" name="" class="nav-input" id="nav-mobile-input" />
+        <label for="nav-mobile-input" class="mfp-bg off-canvas off-canvas-left main-menu-overlay mfp-ready nav-overlay"></label>
+        <div class="mfp-wrap mfp-auto-cursor off-canvas off-canvas-left mfp-ready nav-mobile " tabindex="-1" style="overflow: hidden auto;">
+            <div class="mfp-container mfp-s-ready mfp-inline-holder">
+                <div class="mfp-content">
+                    <div id="main-menu" class="mobile-sidebar no-scrollbar">
+                        <div class="sidebar-menu no-scrollbar ">
+                            <ul class="nav nav-sidebar nav-vertical nav-uppercase">
+                                @{ Html.RenderAction("getMenu", "Temp");}
+                                <li class="html header-social-icons ml-0">
+                                    <div class="social-icons follow-icons"><a href="http://url" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip tooltipstered"><i class="icon-facebook"></i></a><a href="http://url" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain instagram tooltip tooltipstered"><i class="icon-instagram"></i></a><a href="http://url" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon plain twitter tooltip tooltipstered"><i class="icon-twitter"></i></a><a href="mailto:your@email" data-label="E-mail" rel="nofollow" class="icon plain email tooltip tooltipstered"><i class="icon-envelop"></i></a></div>
+                                </li>
+                                <li class="html custom html_topbar_left">
+                                    <div class="header-right">
+                                        <div class="hotline animation">
+                                            <span class="text-normal">Hotline mua hàng (24/7)</span>
+                                            <span class="phone-number"><a href="tel:0914555798">0914555798</a></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><div class="mfp-preloader">Loading...</div>
+                <label for="nav-mobile-input" title="Close (Esc)" class="mfp-close nav-mobile-close"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></label>
+            </div>
+        </div>
+        <header id="header" class="header has-sticky sticky-jump">
+            <div class="header-wrapper">
+                <div id="masthead" class="header-main ">
+                    <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+                        <!-- Logo -->
+                        <div id="logo" class="flex-col logo">
+                            <!-- Header logo -->
+                            <a href="https://hino-nhatban.com/" title="Hino Tín Hưng Thịnh - Đại Lý Xe Tải Hino Chính Hãng"
+                               rel="home">
+                                <img width="85" height="66"
+                                     src="https://hino-nhatban.com/wp-content/uploads/2019/12/download-1.png"
+                                     class="header_logo header-logo" alt="Hino Tín Hưng Thịnh"><img width="85" height="66" src="https://hino-nhatban.com/wp-content/uploads/2019/12/download-1.png" class="header-logo-dark" alt="Hino Tín Hưng Thịnh">
+                            </a>
+                        </div>
+
+                        <!-- Mobile Left Elements -->
+                        <div class="flex-col show-for-medium flex-left">
+                            <ul class="mobile-nav nav nav-left ">
+                                <li class="nav-icon has-icon">
+                                    <div class="header-button">
+                                        <label for="nav-mobile-input" data-open="#main-menu" data-pos="left"
+                                               data-bg="main-menu-overlay" data-color=""
+                                               class="icon primary button round is-small" aria-label="Menu"
+                                               aria-controls="main-menu" aria-expanded="false">
+                                            <i class="fa-solid fa-bars"></i>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Left Elements -->
+                        <div class="flex-col hide-for-medium flex-left flex-grow">
+                            <ul class="header-nav header-nav-main nav nav-left  nav-size-medium nav-spacing-medium nav-uppercase">
+                                @{ Html.RenderAction("getMenu", "Temp");}
+                            </ul>
+                        </div>
+
+                        <!-- Right Elements -->
+                        <div class="flex-col hide-for-medium flex-right">
+                            <ul class="header-nav header-nav-main nav nav-right  nav-size-medium nav-spacing-medium nav-uppercase">
+                                <li class="html custom html_topbar_left">
+                                    <div class="header-right">
+                                        <div class="hotline animation">
+                                            <span class="text-normal">Hotline mua hàng (24/7)</span>
+                                            <span class="phone-number"><a href="tel:0901625998" style="text-decoration:none">0901 625 998</a></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Mobile Right Elements -->
+                        <div class="flex-col show-for-medium flex-right">
+                            <ul class="mobile-nav nav nav-right ">
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="header-bg-container fill">
+                    <div class="header-bg-image fill"></div>
+                    <div class="header-bg-color fill"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- Navbar End -->
+    <div class="main">
+        @RenderBody()
+    </div>
+    <div class="hotline-footer">
+        <div class="left">
+            <a href="#" class="dang-ky pum-trigger" style="cursor: pointer; text-decoration:none"><img src="https://hino-nhatban.com/wp-content/uploads/2020/08/cloud-computing.png">Báo giá nhanh</a>
+        </div>
+        <div class="right">
+            <a style="text-decoration:none" href="tel:0914555798"><img src="https://hino-nhatban.com/wp-content/uploads/2019/03/phone-icon-1.png">Gọi ngay</a>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-4 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-light"><span class="text-primary">HINO </span>Nhật Bản</h1>
+                </a>
+                <p>
+                    Cơ sở 1: Số 513 Xa lộ Hà Nội, Khu phố 1, P. Long Bình, Tp. Biên Hòa, tỉnh Đồng Nai
+                </p>
+                <p>
+                    Hotline: 0901 625 998
+                </p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">MẠNG XÃ HỘI</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-light"><span class="text-primary">CAM KẾT</span></h1>
+                </a>
+                <p><span style="  font-size: 14px;">Cung cấp <strong>XE TẢI Hino</strong> chính hãng.</span><br><span style=" font-size: 14px;">Hỗ trợ tư vấn quý khách tận tình.</span><br><span style=" font-size: 14px;"> Không thu thêm bất cứ khoản phí nào.</span><br><span style=" font-size: 14px;"> Hỗ trợ làm thủ tục trực tiếp, trước và sau bán hàng lâu dài.</span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-light"><span class="text-primary">Vị trí Showroom</span></h1>
+                </a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15668.30567890769!2d106.877925!3d10.9576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174ddf8d09f0853%3A0xe2784f71b60e7e6!2zSElOTyBUcsaw4budbmcgVmluaCBCacOqbiBIw7Jh!5e0!3m2!1svi!2sus!4v1682367525708!5m2!1svi!2sus" height="350" style="border:0; width:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">
+                    Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">
+                    Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- MenuSidebar-->
+    <div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+        <div class="sidebar-menu no-scrollbar ">
+            <ul class="nav nav-sidebar nav-vertical nav-uppercase">
+                @{ Html.RenderAction("getMenu", "Temp");}
+                <li class="html header-social-icons ml-0">
+                    <div class="social-icons follow-icons"><a href="http://url" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip tooltipstered"><i class="icon-facebook"></i></a><a href="http://url" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain instagram tooltip tooltipstered"><i class="icon-instagram"></i></a><a href="http://url" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon plain twitter tooltip tooltipstered"><i class="icon-twitter"></i></a><a href="mailto:your@email" data-label="E-mail" rel="nofollow" class="icon plain email tooltip tooltipstered"><i class="icon-envelop"></i></a></div>
+                </li>
+                <li class="html custom html_topbar_left">
+                    <div class="header-right">
+                        <div class="hotline animation">
+                            <span class="text-normal">Hotline mua hàng (24/7)</span>
+                            <span class="phone-number"><a href="tel:0914555798">0914555798</a></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- MenuSidebar-->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    @Scripts.Render("~/Assets/lib/easing/easing.min.js")
+    @Scripts.Render("~/Assets/lib/owlcarousel/owl.carousel.min.js")
+    @Scripts.Render("~/Assets/lib/tempusdominus/js/moment.min.js")
+    @Scripts.Render("~/Assets/lib/tempusdominus/js/moment-timezone.min.js")
+    @Scripts.Render("~/Assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js")
+    @Scripts.Render("~/Assets/mail/contact.js")
+    @Scripts.Render("~/Assets/mail/jqBootstrapValidation.min.js")
+    @Scripts.Render("~/Assets/js/main.js")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <!-- Contact Javascript File -->
+    <script src="~/Assets/lib/easing/easing.min.js"></script>
+    <script src="~/Assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/Assets/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="~/Assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="~/Assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="~/Assets/mail/jqBootstrapValidation.min.js"></script>
+    <script src="~/Assets/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="~/Assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $('header').addClass('sticky')
+                }
+                else {
+                    $('header').removeClass('sticky')
+                }
+            });
+        });
+        $(window).scroll(function () {
+            var wide = $(window).width();
+            var start = 200;
+            if ($(this).scrollTop() >= start) {
+                $('header').addClass('menus-scroll');
+            }
+            if ($(this).scrollTop() < start) {
+                $('header').removeClass('menus-scroll');
+            }
+        });
+    </script>
+</body>
+</html>
